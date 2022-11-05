@@ -6,7 +6,7 @@
     - [Bölüm 3](#Bölüm 3)
     - [Bölüm 4](#Bölüm 4)
 
-##Bölüm 1
+##1.-Bölüm 1
 
 * Pragmatik felsefenin en önemli noktası kariyer gelişimimizin öğrenmemizin, eğitimimizin vb. alanlarda sorumluluk almaktır.  Örneğin bir hata yaptığımızda ya da yanlış bilgi, yönlendirme yaptığımız zaman bunu üstlenmeliyiz. Projelerde hataların çıkması, testlerinin iyi yapılmaması vb. gibi sorunlarla elbette ki karşılaşacağız ancak bu sorunların çözüm aşamasında elimizden geldiğince çözmeye, projede durağanlık yaratmamaya çalışmalıyız. Bir sorunla karşılaştığımız zaman herhangi bir kişiyi, programı, yazılım dilini veya arkadaşlarımızı suçlamamamız gerekir, bu sayılanlardan herhangi birisinin oluşan sorunda rolü olabilir ancak bizim işimiz buna çözüm sunmak olmalı. İş birimine yapılan hata söylendiği zaman ise bunun workaround bir çözümü var mı veya söyleyeceğimiz sebep mantıklı mı değil mi öncesinde tartılıp düşünülmeli. Tarafımıza bir soru geldiğinde veya bir konu hakkında bilmiyorum değil de bunun yerine araştıracağım, bilgi sahibi olacağım bu konuda gibisinden cevaplar her iki taraf için de daha tatmin edici bir cevap olacaktır. 
 * En önemli unsurlardan birisi ise takım arkadaşlarımız ile aramızdaki güvendir. Takım arkadaşlarımıza güvenerek veya onlara güven vererek çok daha işbirlikçi, yaratıcı veya işi huzurla yapabiliriz. 
