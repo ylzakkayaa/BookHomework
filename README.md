@@ -1,6 +1,6 @@
 # PragmaticProgrammer
 
-- [Bölümler)
+- [Bölümler]
     - [Bölüm 1](#Bölüm 1)
     - [Bölüm 2](#Bölüm 2)
     - [Bölüm 3](#Bölüm 3)
