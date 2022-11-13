@@ -5,6 +5,9 @@
     - [Bölüm 2](#Bölüm-2)
     - [Bölüm 3](#Bölüm-3)
     - [Bölüm 4](#Bölüm-4)
+    - [Bölüm 5](#Bölüm-5)
+    - [Bölüm 6](#Bölüm-6)
+    - [Bölüm 7](#Bölüm-7)
 
 ## Bölüm 1
 
@@ -53,4 +56,72 @@
 * Kod tarafında kaynak kullanımında, ne tür kaynak kullanıldığının önemi olmaksızın temel kalıp bir kaynağı kim tahsis ederse onu serbest bırakmaktan yükümlü olmalıdır. 
 * Pragmatik programcılar kendimiz de dahil kimseye güvenmedikleri için kaynakları uygun şekilde bırakıp bırakmadığını kontrol den bir kod oluşturmanın iyi bir fikir olduğunu savunurlar. 
 * Pragmatik programcıların kesin bir kuralı vardır, devam etmeden önce her zaman küçük ve kasıtlı adımlar atın, geri bildirimi kontrol edin ve ayarlayın.
+
+## Bölüm 5
+
+* Eşleştirme mantığı değişimi zorlaşırır çünkü paralel olarak değişmesi gereken şeyleri birbirine bağlayacaktır, bu da değişimi zorlayacaktır. Yazılım tasarlarken yazılımın esnek olmasını isteriz ki ilerideki değişiklik ihtiyaçlarını karşılayabilsin, esnek olmak için tek tek bileşenler mümkün olduğunca az bileşen ile birleştirilmelidir. 
+* Kod tarafında çok fazla '.' bulundurmamaya çalışmalıyız, bir şeye eriştiğimiz zaman bunu ara değişkenlere atarak işlem yapmalıyız. Uygulamada herhangi bir şeyin değişeceğini düşünerek geliştirme yapılmalı. 
+* Pubsub asenkron olayların işlenmesi için iyi bir teknolojidir. Uygulama çalışırken mevcut kodu değiştirmeden kodun eklenmesine ve değiştirilmesine imkan verir. Dezavantajı ise çok fazla pubsub kullanılırsa sistemde neler olup bittiği gözlemlenemeyeceğidir.
+* Programları girdileri çıktılara dönüştüren bir şey olarak görmeye odaklanmalıyız.
+* Kalıtım bir bağlaçtır, yalnızca alt sınıf ebeveyne, ebeveyninin ebeveynine ve benzerliklerine bağlı olmakla kalmaz aynı zamanda çocuğu kullanan kod da tüm atalara bağlanır. Çoklu kalıtımı doğru bir şekilde modellemek gerekiyor, bir araba bir tür araç olabilir aynı zamanda bir tür sigortalı öğe de olabilir. Inheritance kullanmak yerine aşağıdaki üç özelliği kullanabiliriz.
+    -Interfaces and protocols
+    -Delegation 
+    -Mixins and traits
+* Class yapısını kullanmak yerine protocolü tercih etme sebemimiz ise koddaki bağımlılığı azaltmayı amaçladığımız içindir.
+* Kod, uygulama yayınlandıktan sonra değişebilecek değerlere dayandığında, bu değerleri uygulamanın dışında tutmalıyız. Uygulama farklı ortamlarda ve farklı müşterilerde çalıştığında, ortama ve müşteriye özel değerleri uygulamanın dışında tutmak gerekiyor. Bu şekilde yazdığımız uygulamayı paramedik bir yapıda yazmış oluyoruz ve bu şekilde kod çalıştığı yere uyum sağlayacaktır. Paramedik olarak ekleyeceğimiz şeyler genel olarak aşağıdaki gibidir:
+    -Harici hizmetler için kimlik bilgileri
+    -Kayıt seviyeleri ve hedefler
+    -Uygulamanın kullandığı bağlantı noktası, IP adresi, makine ve küme adları
+    -Ortama özel doğrulama parametreleri
+    -Vergi oranları gibi harici olarak ayarlanan parametreler
+    -Siteye özel biçimlendirme ayrıntıları
+    -Lisans anahtarları
+    Temel olarak ana kod dışındaki değiştirebileceğimiz şeyleri paramedik olarak tanımlamamız gerekiyor.
+
+ ## Bölüm 6
+ 
+ * Eşzamanlılık, iki veya daha fazla kod parçasının aynı anda çalışması demektir. Paralellik, aynı anda çalıştıkları zamandır. Paralelliği sahip olmak için iki şeyi aynı anda yapamn donanıma ihtiyaç duyulmaktadır. Bu bir CPU'daki birden çok çekirdek, bir bilgisayardaki birden fazla CPU veya birbirine bağlı birden çok bilgisayar olabilir. Zamanın bizim için önemli olan iki kısmı bulunmaktadır, bunlar da eşzamanlılık ve sıralamadır. 
+ * Semafor, aynı anda yalnızca bir kişinin sahip olabileceği bir şeydir. Bir semafor oluşturabilir ve ardından başka bir kaynağa erişimi kontrol etmek için kullanabiliriz. Bu yaklaşımla ilgili bazı sorunlar mevcuttur, kodda semafor kullanma geleneğini herkesin kabul etmesi nedeniyle işe yarayacaktır ancak aksi bir durumda yine sorunlar yaşanacaktır. 
+ * Eşzamanlı sorunların kaynağı olarak paylaşılan belleğe çok dikkat edilmelidir ancak asıl sorunlar, uygulama kodumuzun değişebilir kaynakları paylaştığı herhangi bir yerde orata çıkabilir. 
+ * Bir aktör, kendi yerel durumuna bağımsız bir sanal işlemcidir. Her oyuncunun bir posta kutusu vardır ve oyuncu boştaysa ve posta kutusunda posta varsa mesajı işler, herhangi bir iş yok ise uyku moduna geçer.
+ * Bir işlem, genellikle eşzamanlılığı kolaylaştırmak için işletim sistemi tarafından uygulanan daha genel amaçlı bir sanal işlemcidir. 
+ * Aktör modelinde, paylaşılan bir durum olmadığı için eşzamanlılığı incelemek için herhangi bir kod yazmaya gerek yoktur, aktörler aldıkları işi zaten biliyor olacaklardır. 
+ 
+## Bölüm 7
+  
+* Bir programcı deneyim kazandıkça bunlar beynin örtük bilgi katmanlarını oluşturur. Kod yazarken yeni bir şeye başlamışken korkuyorsak veya içgüdülerimiz bizi negatifliğe itiyorsa bu daha önceki deneyimlerimizden kaynaklanıyor olabilir. Böyle bir durumda ilk olarak yaptığımız şeyi durdurup kendimize zaman ve alan tanımalıyız. 
+* Tesadüfen programlamadan kaçınmalıyız, şans ve tesadüfü başarılara güvenmemeliyiz. Bir kod yazıyoruz diyelim, bilerek ve güvenerek ilerlemiyoruz, bir şey yazıyoruz ve doğru çalıştığını görüyoruz ancak aylar sonra bu uygulama çökebilir çünkü burada tesadüf kod yazmış oluyoruz, bu şekilde ilerlememeliyiz. 
+* Uygulama kazaları, kodun şu anda bu şekilde yazıldığıyla için olan şeylerdir. 
+* Çalışan gibi görünen aslında sorun olan şeyleri düzeltmek için risk almalıyız, sebepleri ise aşağıdaki gibidir:
+ - Gerçekten çalışmıyor olabilir, çalışıyor gibi görünüyor olabilir.
+ - Güvenilen sınır koşulu sadece bir kaza olabilir. Farklı durumlarda farklı davranabilir.
+ - Belgelenmemiş davranış, kitaplığın sonraki sürümü ile değişebilir.
+ - Ek ve gereksiz belgelenmeler kodu yavaşlatır.
+ - Ek çağrılar, yeni hataların ortaya çıkma riskini arttırır.
+* Kasıtlı olarak programlama yapmalıyız. Aşağıdaki maddeleri bu konuda yardımcımız olacaktır:
+ - Her zaman ne yaptığınızın farkında olun.
+ - Kodu, daha genç bir programcıya açıklayabiliyor olmalıyız.
+ - Karanlıkta kodlama yapmamalıyız, neyin ne işe yaradığını bilerek kodlama yapmalıyız.
+ - Bu plan kafamızda veya bir kağıtta olsun, planlayarak ilerlemeliyiz.
+ - Yalnızca güvenilir şeylere güvenmeliyiz. Bir şeyin güvenirliğinden emin değilsek olabilecek en kötü durumu düşünmeliyiz.
+ - Varsayımlarımızı belgelemeliyiz, bu şekilde hem zihnimizde netleşecektir, hem de başkalarına iletmemizde yardımcı olacaktır. 
+ - Sadece kodu test etmemeliyiz, aynı zamanda varsayımlarımızı da test etmeliyiz. 
+ - Çabamıza öncelik vermeliyiz, önemli yönlere zaman ayırmalıyız.
+ - Mevcut kodun gelecekteki kodu engellemesine izin vermemeliyiz. 
+* Bir program geliştikçe, daha önceki kararları yeniden düşünmek ve kodun bölümlerini yeniden çalışmak gerekecektir, bu süreç tamamen doğaldır. 
+* Bir şeyi öğrendiğimizde eskisine göre daha iyi yorum yapabiliriz. Kod artık tam olarak uymadığında veya herhangi bir şey bize yanlış geldiğinde vb. durumlarda değiştirmekte tereddüz etmemeliyiz. Aşağıdaki durumlarda değiştirme ihtiyacı duyabiliriz.
+ - DRY ilkesinin ihlal edildiğini gördüğünüzde,
+ - Ortogonal olmayan tasarımı daha ortogonal yapılabilecek bir şey gördüğmüzde,
+ - Bir şeyler değişir ve sorun hakkındaki bilgimiz arttığında,
+ - Sistem gerçek insanlar tarafından kullanıma başlandıkça, bazı özelliklerin artık düşünülenden daha önemli olduğunu ve olması gereken özelliklerin aslında olmadığında,
+ - Performansı arttırmamız gerektiğinde.
+* Yazdığımız kodun iyi olup olmadığını ancak bunu test ederek anlarız. Test etmek istediğimiz şeyi anladıysak test etmeliyiz, aksi taktirde testi doğru yapıp yapamadığımızı bilemeyiz. 
+* Kod tarafında güvenliği sağlamak için birkaç temel ilke vardır:
+ - Bir sistemin saldırı yüzey alanı, bir saldırganın veri girebileceği, veri çıkarabileceği ve bir hizmetin yürütülmesini başlatılabileceği tüm erişim noktalarının toplamıdır. Saldırının yüzey alanını küçültmeliyiz.
+ - Elimizden geldiğince en az ayrıcalıktann en kısa süre yararlanmaktır. Örneğin en yüksek izin yetkisi olan 'Yöneticiyi' otomatik olarak almamalız. Bu yüksek seviyeye ihtiyaç duyulursa hızlı bir şekilde işlemimizi yapıp gerş bırakmalıyız. 
+ - Uygulamadaki kullanıcıların ayarları en güvenli ayarlar olmaldırı.
+ - Kişisel olarak tanımlanabilen bilgileri, finansal bilgileri, paraloları vb. bilgileri veritabanında veya baika bir yerde düz metin olarak tutulmamalı.
+ - Bilgisayar sistemlerini güncellemek gerekiyor. 
+* Kod tarafında bir şeyleri adlandırırken sürekli olarak ne demek istediğimizi açıklama yollarını ararsak kodumuzu daha iyi anlamamıza yardımcı olacaktır.
+ 
 
