@@ -8,6 +8,8 @@
     - [Bölüm 5](#Bölüm-5)
     - [Bölüm 6](#Bölüm-6)
     - [Bölüm 7](#Bölüm-7)
+    - [Bölüm 8](#Bölüm-8)
+    - [Bölüm 9](#Bölüm-9)
 
 ## Bölüm 1
 
@@ -123,5 +125,23 @@
  - Kişisel olarak tanımlanabilen bilgileri, finansal bilgileri, paraloları vb. bilgileri veritabanında veya baika bir yerde düz metin olarak tutulmamalı.
  - Bilgisayar sistemlerini güncellemek gerekiyor. 
 * Kod tarafında bir şeyleri adlandırırken sürekli olarak ne demek istediğimizi açıklama yollarını ararsak kodumuzu daha iyi anlamamıza yardımcı olacaktır.
- 
 
+
+## Bölüm 8
+* İlk makinelerde yapılabiecekler sınırlı olduğu için, çözdüğü sorunların kapsamı da kısıtlıydı, bu sebeple başlamadan önce tüm sorunu anlamak mümkündü ama günümüzde bu artık dağınık, çelişkili ve bilinmezdir. Bu noktada programcılar devreye giriyor, ne istediklerini anlamada yardımcı oluyorlar. 
+* Bize müşteri bir süreç getirdiği zaman aklımızdaki soruların çoğunun yanıtı olacaktır ancak müşterinin daha önceden düşünmediği şeyler olacaktır. Bu noktoda karşı tarafa zaman tanıyıp daha iyi bir yol bulmaya gidilecektir. 
+* Bir kod yazarken müşterinin tarafından olaya bakabilirsek bu bize gerçekten nasıl kullanılacağı hakkında bilgi verecektir ve geliştirmelerimiz ona göre şekillenecektir. 
+* İnatçı bir sorunla karşılaştığımız zaman bütün olasıkları göz ardı etmeden sıralamalıyız. Bir sorun ile uğraşırken bize çok zor geldiyse, çıkılmaz bir yola girdiğimiz düşünmeye başladıysak bir mola vermeliyiz, hala çözemiyorsak sorunu birisne anlatarak kendimiz bir aydınlanma yaşayabiliriz. 
+* Yazılım geliştirmede çeviklik karşılaşılan bilinmezliklere yanıt vermek, değişime yanıt vermekle ilgilidir.   
+
+## Bölüm 9
+* Kalite bir ekip meselesidir, en iyi yazılımcı bile umursamayan bir ekibe yerleştirildiğinde sorunu çözmek için gerekli coşkuyu kendi bulamayacaktır. Ekipler kimsenin düzelmediği sorunlarla ilgilenmeli, ürünün kalitesinden sorumlu olmalı. Herkesi, değişiklikler için ortamı izlemeye teşvik etmeliyiz. 
+* Ekip olarak iyileştirme ve yenilik konusunu ciddiye alıyorsak, bunun planlanması gerekiyor, Boş olduğumuzda bakarız demek aslında dönüp bir daha ona bakmayacağımız anlamına geliyor. 
+* Takımların bir şekilde iletişim kurmasını sağlamak için, örneğin bir projeye başladığımız zaman ona simi bulmak için veya bir logo bulmak için bir araya gelmeliyiz. 
+* Yazılan kodlarda hem doğruluğu hem de tutarlılığı sağlamak için ekibin yaptığı her şeyi otomatikleştirmek iyi bir karar olacaktır.
+* İhtiyacımız olan bir şeyi araştırıken neyin işimize yarayacapını anlamanın en iyi yolu denemektir. 
+* Kod tarafında ileride daha büyük sorunlarla karşılaşmamak için en başından itibaren test etmeye başlamalıyız. 
+* Kullanıcılar bize istediklerini ilettikleri zaman, ihtiyaçlarının bu olup olmadığını sorgulamalıyız. Sistemin fonksiyonel gereksinimlerini karşılayıp karşılamadığına bakmalıyız. 
+* Testleri test etmek için testlere kasıtlı olarak hata alınabilecek şeyler ekleyip testin bunları yakaladığından emin olmalıyız.
+* Kod tarafında bir hatayı yakaladığımız zaman bunun için kontrol koyarak bu hatayı bir dah almamamk için aksiyon almalıyız. 
+* Pragmatik programcılar sorumluluklardan kaçmazlar, bunun yerine zorlukları kabul ederek uzmanlığımızın iyi bilinmesini isteriz. 
