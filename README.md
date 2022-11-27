@@ -1,26 +1,26 @@
 
 - [Pragmatic Programmer](#Pragmatic-Programmer)
 - [Bölümler](#Bölümler)
-    - [Bölüm 1](#Bölüm-1)
-    - [Bölüm 2](#Bölüm-2)
-    - [Bölüm 3](#Bölüm-3)
-    - [Bölüm 4](#Bölüm-4)
-    - [Bölüm 5](#Bölüm-5)
-    - [Bölüm 6](#Bölüm-6)
-    - [Bölüm 7](#Bölüm-7)
-    - [Bölüm 8](#Bölüm-8)
-    - [Bölüm 9](#Bölüm-9)
+    - [PM Bölüm 1](#PM-Bölüm-1)
+    - [PM Bölüm 2](#PM-Bölüm-2)
+    - [PM Bölüm 3](#PM-Bölüm-3)
+    - [PM Bölüm 4](#PM-Bölüm-4)
+    - [PM Bölüm 5](#PM-Bölüm-5)
+    - [PM Bölüm 6](#PM-Bölüm-6)
+    - [PM Bölüm 7](#PM-Bölüm-7)
+    - [PM Bölüm 8](#PM-Bölüm-8)
+    - [PM Bölüm 9](#PM-Bölüm-9)
 - [Clean Code](#Clean-Code)
 - [Bölümler](#Bölümler)
-    - [Bölüm 1](#Bölüm-1)
-    - [Bölüm 2](#Bölüm-2)
-    - [Bölüm 3](#Bölüm-3)
-    - [Bölüm 4](#Bölüm-4)
+    - [CC Bölüm 1](#CC-Bölüm-1)
+    - [CC Bölüm 2](#CC-Bölüm-2)
+    - [CC Bölüm 3](#CC-Bölüm-3)
+    - [CC Bölüm 4](#CC-Bölüm-4)
 
 
 # Pragmatic Programmer
 
-## Bölüm 1
+## PM Bölüm 1
 
 * Pragmatik felsefenin en önemli noktası kariyer gelişimimizin öğrenmemizin, eğitimimizin vb. alanlarda sorumluluk almaktır.  Örneğin bir hata yaptığımızda ya da yanlış bilgi, yönlendirme yaptığımız zaman bunu üstlenmeliyiz. Projelerde hataların çıkması, testlerinin iyi yapılmaması vb. gibi sorunlarla elbette ki karşılaşacağız ancak bu sorunların çözüm aşamasında elimizden geldiğince çözmeye, projede durağanlık yaratmamaya çalışmalıyız. Bir sorunla karşılaştığımız zaman herhangi bir kişiyi, programı, yazılım dilini veya arkadaşlarımızı suçlamamamız gerekir, bu sayılanlardan herhangi birisinin oluşan sorunda rolü olabilir ancak bizim işimiz buna çözüm sunmak olmalı. İş birimine yapılan hata söylendiği zaman ise bunun workaround bir çözümü var mı veya söyleyeceğimiz sebep mantıklı mı değil mi öncesinde tartılıp düşünülmeli. Tarafımıza bir soru geldiğinde veya bir konu hakkında bilmiyorum değil de bunun yerine araştıracağım, bilgi sahibi olacağım bu konuda gibisinden cevaplar her iki taraf için de daha tatmin edici bir cevap olacaktır. 
 * En önemli unsurlardan birisi ise takım arkadaşlarımız ile aramızdaki güvendir. Takım arkadaşlarımıza güvenerek veya onlara güven vererek çok daha işbirlikçi, yaratıcı veya işi huzurla yapabiliriz. 
@@ -29,7 +29,7 @@
 * Bir iletişim kurmak istediğimiz zaman karşı tarafın ihtiyaçlarını, ilgi alanlarını veya yeteneklerini bilerek iletişim kurmalıyız. İletişim kurarken hedef kitlemiz hakkındaki bilgilerimizi sürekli olarak güncel tutmalıyız. Karşı tarafa aktaracağımız konunun ihtiyaçlarını gidermesi gerekiyor, bu konuşma için de uygun zamanı bularak, karşı tarafın önceliklerine göre yapmalıyız. Konuyu aktarırken stilimizi hedef kitlesine göre belirlemeliyiz. Fikirlerimizi hedef kitlesine iletmek için stiline ve düzenine dikkat ederek iletmeliyiz. Bir üretim aşamasında karşı taraftan geri bildirim alarak ilerlemek daha iyi bir ürün çıkarmamıza yardımcı olacaktır. İletişim kurarken dinleyici olmamız gerekir, karşı tarafa sorular yönelterek onları da konuşmaya dahil etmemiz gerekir. Tarafımıza bir soru yöneldiğinde veya üzerimizde herhangi bir mail olduğu zaman onlara dönüş yapmamız gerekiyor aksi taktirde karşı taraf o konuyla ilgilenilmediğini veya konunun ortada kaldığını düşünecektir. Yapılan proje için belge tutarak ilerlemeliyiz yani bir dokümantasyon olursa sonrası için de işlerimizi kolaylaştıracaktır. 
 
 
-## Bölüm 2
+## PM Bölüm 2
 
 * Bir ürün onu kullanan insanlara uyum sağlayabiliyorsa bu iyi tasarlanmış demektir, örneğin iyi tasarlanmış bir ürün kullanıcının ihtiyaçlarına göre değişim yapılabilmelidir. Programdaki isimlendirmelerin iyi olması kodun okunmasını ve değiştirilmesini kolaylaştırır, yazdıklarımızın değiştirilebilir halde olmasına özen göstermeliyiz. Kod tarafında önemli yerlere not düştüğümüzde zaman geçse bile dönüp baktığımızda kolayca anlayabilmeliyiz. 
 * DRY ilkesine uygun bir kodda bir yerde değişiklik yaptığımız zaman birden çok yere dokunmamalıyız ve farklı şekillerde olmamalıdır. Kod tarafındaki yorumlarımızda stabil kelimeler veya cümleler kullanmamalıyız, çünkü bunlar değiştiği zaman yorumu da güncellememiz gerekecektir. 
@@ -49,7 +49,7 @@
     30+ weeks    think hard before giving an estimate 
 * Yapılan tahminler soruna göre değişiklik göstermektedir, bu gibi durumlarda bunu daha önceden yaşayan kişilerden destek alarak sorunun daha hızlı çözüldüğünü gözlemleyebiliriz. Tahmin yapmadan önce ne sorulduğunu anlamamız ve etki alanını kavramamız gerekiyor. Tarafımızdan tahmin istendiğinde ise sana döneceğim şeklinde cevap verebiliriz :)
 
-## Bölüm 3
+## PM Bölüm 3
 
 * Pragmatik programcılar için temel şey bilgidir. Gereksinimlerimizi bilgi olarak toplarız ve bunları tasarımlarımızda, uygulamalarımızda, testlerimizde ve dökümanlarımızla ifade ederiz. Bilgiyi saklamanın en iyi biçimi ise düz yazıdır. İnsan tarafından okunabilen veri biçimleri diğer veri biçimlerine göre daha uzun ömürlü olacaktır. Veri dosyalarında alan ismi verirken herkesin anlayabileceği bir şekilde yaparsak bunu okunabilirliği daha yüksek olacaktır. Düz metin kullanımı tüm tarafların ortak bir standart kullanarak iletişim kurmasını sağlar. 
 * GUI ortamları tasarımcıların amaçladığı yeteneklerle sınırlıdır. Avantajı da dezavantajı da ne görüyorsak onu almamızdır. 
@@ -57,7 +57,7 @@
 * Yazdığımız projelerde sürüm kontrolü kullanmalıyız. Bir kaç dakika önce yaptığımız değişikliğe eğer ki destekliyorsa geri alma komutu ile gidebiliriz ancak bir hafta önceki değişikliğe sürüm kontrolü kullanmadan gidemeyiz. Sürüm kontrolleri kaynak kodumuzda ve dokümantasyonumuzdaki bütün değişiklikleri takip edecektir. Sürüm kontrolleri hatayı geri almaktan çok daha fazlasını yapacaktır, örneğin bu satısı kim yazdı, bu değişiklik ne zaman yapıldı, bu sürümde kaç satır kod değiştirdik vb. 
 * Hata ayıklamanın sadece problemi çözmek olduğu gerçeğini benimsemeliyiz. Başkasının hatasını bulduğumuz zaman da suçlayıcı veya elle gösterici şeklinde değil bu sorunu nasıl çözebilirize odaklanmamız gerekiyor. Hatayı bulmaya başlamadan önce uyarılar olmadan temiz bir kod üstünde çalışmalıyız aksi taktirde bilgisayarın bizim yerimize bulabileceği bir sorunu bulmaya çalışırken zaman kaybedebiliriz. Herhangi bir sorunu çözmeye çalışırken ilgili tüm verileri toplamamız gerekli.  Tesadüfler tarafından yanıltılmak kolaydır ve tesadüflerin hatalarını ayıklayarak zaman kaybetmemeliyiz. Başlangıçta bize verilen bilgiden daha fazlasını toplamak için hatayı bildiren kullanıcı ile görüşmemiz gerekebilir. Sürümler arası kontrol ile de bakacağımız alanı daraltabiliriz. En son çalışan sürüm ile hata alan şu anki sürüm arasındaki kod farklılıkları ile soruna daha da yaklaşırız. Hatayı sözlü olarak başkasına aktarırken de soruna dair yeni bir kavrayış kazanabiliriz. 
 
-## Bölüm 4
+## PM Bölüm 4
 
 * Pragmatik programcılar kendileri de dahil kimsenin mükemmel kod yazmadığını bilerek kendi hatalarına karşı savunma oluştururlar. 
 * Bir sözleşme haklarımızı ve sorumluluklarımız aynı zamanda karşı tarafın haklarını tanımlar. Taraflardan herhangi birinin sözleşmeye uymaması durumunda ortaya çıkacak sonuçlarla ilgili bir anlaşmadır. 
@@ -68,7 +68,7 @@
 * Pragmatik programcılar kendimiz de dahil kimseye güvenmedikleri için kaynakları uygun şekilde bırakıp bırakmadığını kontrol den bir kod oluşturmanın iyi bir fikir olduğunu savunurlar. 
 * Pragmatik programcıların kesin bir kuralı vardır, devam etmeden önce her zaman küçük ve kasıtlı adımlar atın, geri bildirimi kontrol edin ve ayarlayın.
 
-## Bölüm 5
+## PM Bölüm 5
 
 * Eşleştirme mantığı değişimi zorlaşırır çünkü paralel olarak değişmesi gereken şeyleri birbirine bağlayacaktır, bu da değişimi zorlayacaktır. Yazılım tasarlarken yazılımın esnek olmasını isteriz ki ilerideki değişiklik ihtiyaçlarını karşılayabilsin, esnek olmak için tek tek bileşenler mümkün olduğunca az bileşen ile birleştirilmelidir. 
 * Kod tarafında çok fazla '.' bulundurmamaya çalışmalıyız, bir şeye eriştiğimiz zaman bunu ara değişkenlere atarak işlem yapmalıyız. Uygulamada herhangi bir şeyin değişeceğini düşünerek geliştirme yapılmalı. 
@@ -89,7 +89,7 @@
     -Lisans anahtarları
     Temel olarak ana kod dışındaki değiştirebileceğimiz şeyleri paramedik olarak tanımlamamız gerekiyor.
 
- ## Bölüm 6
+ ## PM Bölüm 6
  
  * Eşzamanlılık, iki veya daha fazla kod parçasının aynı anda çalışması demektir. Paralellik, aynı anda çalıştıkları zamandır. Paralelliği sahip olmak için iki şeyi aynı anda yapamn donanıma ihtiyaç duyulmaktadır. Bu bir CPU'daki birden çok çekirdek, bir bilgisayardaki birden fazla CPU veya birbirine bağlı birden çok bilgisayar olabilir. Zamanın bizim için önemli olan iki kısmı bulunmaktadır, bunlar da eşzamanlılık ve sıralamadır. 
  * Semafor, aynı anda yalnızca bir kişinin sahip olabileceği bir şeydir. Bir semafor oluşturabilir ve ardından başka bir kaynağa erişimi kontrol etmek için kullanabiliriz. Bu yaklaşımla ilgili bazı sorunlar mevcuttur, kodda semafor kullanma geleneğini herkesin kabul etmesi nedeniyle işe yarayacaktır ancak aksi bir durumda yine sorunlar yaşanacaktır. 
@@ -98,7 +98,7 @@
  * Bir işlem, genellikle eşzamanlılığı kolaylaştırmak için işletim sistemi tarafından uygulanan daha genel amaçlı bir sanal işlemcidir. 
  * Aktör modelinde, paylaşılan bir durum olmadığı için eşzamanlılığı incelemek için herhangi bir kod yazmaya gerek yoktur, aktörler aldıkları işi zaten biliyor olacaklardır. 
  
-## Bölüm 7
+## PM Bölüm 7
   
 * Bir programcı deneyim kazandıkça bunlar beynin örtük bilgi katmanlarını oluşturur. Kod yazarken yeni bir şeye başlamışken korkuyorsak veya içgüdülerimiz bizi negatifliğe itiyorsa bu daha önceki deneyimlerimizden kaynaklanıyor olabilir. Böyle bir durumda ilk olarak yaptığımız şeyi durdurup kendimize zaman ve alan tanımalıyız. 
 * Tesadüfen programlamadan kaçınmalıyız, şans ve tesadüfü başarılara güvenmemeliyiz. Bir kod yazıyoruz diyelim, bilerek ve güvenerek ilerlemiyoruz, bir şey yazıyoruz ve doğru çalıştığını görüyoruz ancak aylar sonra bu uygulama çökebilir çünkü burada tesadüf kod yazmış oluyoruz, bu şekilde ilerlememeliyiz. 
@@ -136,7 +136,7 @@
 * Kod tarafında bir şeyleri adlandırırken sürekli olarak ne demek istediğimizi açıklama yollarını ararsak kodumuzu daha iyi anlamamıza yardımcı olacaktır.
 
 
-## Bölüm 8
+## PM Bölüm 8
 
 * İlk makinelerde yapılabiecekler sınırlı olduğu için, çözdüğü sorunların kapsamı da kısıtlıydı, bu sebeple başlamadan önce tüm sorunu anlamak mümkündü ama günümüzde bu artık dağınık, çelişkili ve bilinmezdir. Bu noktada programcılar devreye giriyor, ne istediklerini anlamada yardımcı oluyorlar. 
 * Bize müşteri bir süreç getirdiği zaman aklımızdaki soruların çoğunun yanıtı olacaktır ancak müşterinin daha önceden düşünmediği şeyler olacaktır. Bu noktoda karşı tarafa zaman tanıyıp daha iyi bir yol bulmaya gidilecektir. 
@@ -144,7 +144,7 @@
 * İnatçı bir sorunla karşılaştığımız zaman bütün olasıkları göz ardı etmeden sıralamalıyız. Bir sorun ile uğraşırken bize çok zor geldiyse, çıkılmaz bir yola girdiğimiz düşünmeye başladıysak bir mola vermeliyiz, hala çözemiyorsak sorunu birisne anlatarak kendimiz bir aydınlanma yaşayabiliriz. 
 * Yazılım geliştirmede çeviklik karşılaşılan bilinmezliklere yanıt vermek, değişime yanıt vermekle ilgilidir.   
 
-## Bölüm 9
+## PM Bölüm 9
 
 * Kalite bir ekip meselesidir, en iyi yazılımcı bile umursamayan bir ekibe yerleştirildiğinde sorunu çözmek için gerekli coşkuyu kendi bulamayacaktır. Ekipler kimsenin düzelmediği sorunlarla ilgilenmeli, ürünün kalitesinden sorumlu olmalı. Herkesi, değişiklikler için ortamı izlemeye teşvik etmeliyiz. 
 * Ekip olarak iyileştirme ve yenilik konusunu ciddiye alıyorsak, bunun planlanması gerekiyor, Boş olduğumuzda bakarız demek aslında dönüp bir daha ona bakmayacağımız anlamına geliyor. 
@@ -160,7 +160,7 @@
 
 # Clean Code
 
-## Bölüm 1
+## CC Bölüm 1
 
 * Artık koda ihtiyaç duyulmayacak deniliyor ancak kod her zaman hayatımızda olacak çünkü kod, gereksinimlerin ayrıntılarını temsil eder.
 * Kod tarafındaki dağınıklık arttıkça ekibin üretkenliği azalmaya başlar bu sebeple kodu her zaman temiz tutmaya özen göstermeliyiz.
@@ -168,7 +168,7 @@
 * Temiz kod zarif, verimli ve insanlar tarafından okunabilecek şekilde olması gerekiyor. Testler olmadan kod temiz değildir. Kodu okumadan kod yazmanın biy yolu yok, aslında okumayı kolaylaştırmak yazmayı da kolaylaştırıyor.
 * Kodun zaman içinde de iyi tutulması gerekiyor. Kodu teslim ettiğimiz zaman temiz bir şekilde teslim edersek bu sorun yaşanmayacaktır. 
 
-## Bölüm 2
+## CC Bölüm 2
 
 * Kod tarafındaki isimlendirmeler niyeti ortaya çıkarması gerekiyor, bir isim yorum gerektiriyorsa ismin amacını açıklamadığı anlamına gelir. Daha iyi bir isimlendirme bulduğumuz zaman değiştirmekten çekinmemeliyiz, bu kodun okunabilirliğini arttıracaktır.
 * Küçük şekillerde farklı gösterilen isimlendirmelerden kaçınmalıyız, kodu okuyan birisi için bunu fark etmek zaman alacaktır.
@@ -180,7 +180,7 @@
 * Kodu okuyan bir programcı olduğu için ismlendirmelerde bilgisayar bilimi terimleri, algoritma adları, kalıp adları, matematik terimlerini vb. kullanabiliriz.
 * lastName, firstName gibi kullanımlar ne için oldukları açıktır ancak daha büyük bir işin parçası olduğu zaman bu şekilde adlandırmak yerine bir sınıf oluşturmak daha doğru bir yoldur.
 
-## Bölüm 3
+## CC Bölüm 3
 
 * Fonksiyonlar olabildiğince küçük tutulmalıdır. 
 * İşlevlerin tek bir şey yaptığınandan emin olmak için, işlevin tüm ifadelerin aynı soyutlama düzeyinde olduğundan emin olmamız gerekir.
@@ -194,7 +194,7 @@
 * Hata kodlarını döndürmek yerine istisnalar döndürülmelidir.
 * Kod tarafında kendimiz tekrar etmemeliyiz, sebebi ise kodu şişiriyor ve algoritmanın değişmesi gerektiğinde her yerde değiştirmek gerekiyor, aynı zamanda daha fazla ihmail olasılığı barındırıyor.
 
-## Bölüm 4
+## CC Bölüm 4
 
 * Kod tarafında hiçbir şey iyi yerleştirilmiş bir kod kadar yardımcı olamaz, hiçbir şey bir modülü anlamsız dogmatik yorumlardan daha fazla karıştıramaz ve yanlış bilgileri yayan eski, kaba bir yorum kadar da zarar verici olamaz.
 * Kod tarafı okunabilir olduğu zaman yorumlara duyulan ihtiyaçlar azalacaktır belki de hiç olmayacaktır. Yorumların doğru kullanımı, kodla ifade edememeyi telafi etmektir.
