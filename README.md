@@ -1,5 +1,5 @@
-# PragmaticProgrammer
 
+- [Pragmatic Programmer](#Pragmatic-Programmer)
 - [Bölümler](#Bölümler)
     - [Bölüm 1](#Bölüm-1)
     - [Bölüm 2](#Bölüm-2)
@@ -10,6 +10,15 @@
     - [Bölüm 7](#Bölüm-7)
     - [Bölüm 8](#Bölüm-8)
     - [Bölüm 9](#Bölüm-9)
+- [Clean Code](#Clean-Code
+- [Bölümler](#Bölümler)
+    - [Bölüm 1](#Bölüm-1)
+    - [Bölüm 2](#Bölüm-2)
+    - [Bölüm 3](#Bölüm-3)
+    - [Bölüm 4](#Bölüm-4)
+
+
+# Pragmatic Programmer
 
 ## Bölüm 1
 
@@ -128,6 +137,7 @@
 
 
 ## Bölüm 8
+
 * İlk makinelerde yapılabiecekler sınırlı olduğu için, çözdüğü sorunların kapsamı da kısıtlıydı, bu sebeple başlamadan önce tüm sorunu anlamak mümkündü ama günümüzde bu artık dağınık, çelişkili ve bilinmezdir. Bu noktada programcılar devreye giriyor, ne istediklerini anlamada yardımcı oluyorlar. 
 * Bize müşteri bir süreç getirdiği zaman aklımızdaki soruların çoğunun yanıtı olacaktır ancak müşterinin daha önceden düşünmediği şeyler olacaktır. Bu noktoda karşı tarafa zaman tanıyıp daha iyi bir yol bulmaya gidilecektir. 
 * Bir kod yazarken müşterinin tarafından olaya bakabilirsek bu bize gerçekten nasıl kullanılacağı hakkında bilgi verecektir ve geliştirmelerimiz ona göre şekillenecektir. 
@@ -135,6 +145,7 @@
 * Yazılım geliştirmede çeviklik karşılaşılan bilinmezliklere yanıt vermek, değişime yanıt vermekle ilgilidir.   
 
 ## Bölüm 9
+
 * Kalite bir ekip meselesidir, en iyi yazılımcı bile umursamayan bir ekibe yerleştirildiğinde sorunu çözmek için gerekli coşkuyu kendi bulamayacaktır. Ekipler kimsenin düzelmediği sorunlarla ilgilenmeli, ürünün kalitesinden sorumlu olmalı. Herkesi, değişiklikler için ortamı izlemeye teşvik etmeliyiz. 
 * Ekip olarak iyileştirme ve yenilik konusunu ciddiye alıyorsak, bunun planlanması gerekiyor, Boş olduğumuzda bakarız demek aslında dönüp bir daha ona bakmayacağımız anlamına geliyor. 
 * Takımların bir şekilde iletişim kurmasını sağlamak için, örneğin bir projeye başladığımız zaman ona simi bulmak için veya bir logo bulmak için bir araya gelmeliyiz. 
@@ -145,3 +156,56 @@
 * Testleri test etmek için testlere kasıtlı olarak hata alınabilecek şeyler ekleyip testin bunları yakaladığından emin olmalıyız.
 * Kod tarafında bir hatayı yakaladığımız zaman bunun için kontrol koyarak bu hatayı bir dah almamamk için aksiyon almalıyız. 
 * Pragmatik programcılar sorumluluklardan kaçmazlar, bunun yerine zorlukları kabul ederek uzmanlığımızın iyi bilinmesini isteriz. 
+
+
+# Clean Code
+
+## Bölüm 1
+
+* Artık koda ihtiyaç duyulmayacak deniliyor ancak kod her zaman hayatımızda olacak çünkü kod, gereksinimlerin ayrıntılarını temsil eder.
+* Kod tarafındaki dağınıklık arttıkça ekibin üretkenliği azalmaya başlar bu sebeple kodu her zaman temiz tutmaya özen göstermeliyiz.
+* Programcı olarak yönetiilerin iradesine boyun eğmek profesyonelce olmayacaktır çünkü kodda ne olduğunu veya nasıl olması gerekdiğini bizden bekliyordur, gerektiği yerlerde kodla ilgili doğruyu söylemeliyiz.
+* Temiz kod zarif, verimli ve insanlar tarafından okunabilecek şekilde olması gerekiyor. Testler olmadan kod temiz değildir. Kodu okumadan kod yazmanın biy yolu yok, aslında okumayı kolaylaştırmak yazmayı da kolaylaştırıyor.
+* Kodun zaman içinde de iyi tutulması gerekiyor. Kodu teslim ettiğimiz zaman temiz bir şekilde teslim edersek bu sorun yaşanmayacaktır. 
+
+## Bölüm 2
+
+* Kod tarafındaki isimlendirmeler niyeti ortaya çıkarması gerekiyor, bir isim yorum gerektiriyorsa ismin amacını açıklamadığı anlamına gelir. Daha iyi bir isimlendirme bulduğumuz zaman değiştirmekten çekinmemeliyiz, bu kodun okunabilirliğini arttıracaktır.
+* Küçük şekillerde farklı gösterilen isimlendirmelerden kaçınmalıyız, kodu okuyan birisi için bunu fark etmek zaman alacaktır.
+* Değişken sçzcüğü aslan bir değişken adında yer almamalıdır. Tablo sözcüğü hiçbir zaman tablo adında yer almamalıdır.
+* İsimlendirmeleri telaffuz edilebilir yapmalıyız. Aranabilir isimler kullanmalıyız. 
+* Tek harfli değişken adları kapsamı küçükse ve başka bir ad ile çelişmiyorsa kullanılabilir. Örneğin döngü sayacı olarak kullanılan i veya j harfleri, bunlar dışında kullanılması da hatadır, i ve j'nin hata olmaması ise bu harflerin artık geleneksel olmalarıdır.
+* Bir sınıf adı fiil olmamalıdır.
+* Kod yazarken bir soyut kavram seçmeli ve ona bağlı kalmalıyız. Aynı kelimeyi iki amaç için kullanmaktan kaçınmalıyız. 
+* Kodu okuyan bir programcı olduğu için ismlendirmelerde bilgisayar bilimi terimleri, algoritma adları, kalıp adları, matematik terimlerini vb. kullanabiliriz.
+* lastName, firstName gibi kullanımlar ne için oldukları açıktır ancak daha büyük bir işin parçası olduğu zaman bu şekilde adlandırmak yerine bir sınıf oluşturmak daha doğru bir yoldur.
+
+## Bölüm 3
+
+* Fonksiyonlar olabildiğince küçük tutulmalıdır. 
+* İşlevlerin tek bir şey yaptığınandan emin olmak için, işlevin tüm ifadelerin aynı soyutlama düzeyinde olduğundan emin olmamız gerekir.
+* Kodlamamızda açıklayıcı isimler kullanmalıyız, kod tarafındaki simlendirmelere bakarak beklediğimiz gibi çıktığını görürsek temiz kod üzerinde çalıştığımızı anlarız.
+* Uzun ve tanımlayıcı bir ad kısa ve esrarengiz bir addan daha iyidir. 
+* Adlandırmalarda tutarlı olmalıyız.
+* Bir işlev için idela bağımsız sayısı sıfırdır. Üçten fazlası çok özel gerekçelendirme gerektirir ve kullanılmamalıdır.
+* Bir işlev için iyi ad seçmek, işlevin amacını ve bağımsız değişkenlerin sırasını ve amacını açıklamada uzun bir yol kat edebilir. Bir monad söz konusu olduğunda, işlev ve argüman iyi bir fiil/isim çifti olutşurmalı.
+* Kodun çıktısı bağımsız değişkenlerinden kaçınılmalıdır. İşlevin durumunu değiştirmek istiyorsak sahip olduğu nesnenin durumunun değiştirilmesi sağlanmalı.
+* İşlevler ya bir şey yapmalı ya da bir şeye cevap vermeli, ikisini birden yapmamalı. Ya işlevin durumunu değiştirmeli ya da o nesne hakkında bazı bilgiler döndürmeli.
+* Hata kodlarını döndürmek yerine istisnalar döndürülmelidir.
+* Kod tarafında kendimiz tekrar etmemeliyiz, sebebi ise kodu şişiriyor ve algoritmanın değişmesi gerektiğinde her yerde değiştirmek gerekiyor, aynı zamanda daha fazla ihmail olasılığı barındırıyor.
+
+## Bölüm 4
+
+* Kod tarafında hiçbir şey iyi yerleştirilmiş bir kod kadar yardımcı olamaz, hiçbir şey bir modülü anlamsız dogmatik yorumlardan daha fazla karıştıramaz ve yanlış bilgileri yayan eski, kaba bir yorum kadar da zarar verici olamaz.
+* Kod tarafı okunabilir olduğu zaman yorumlara duyulan ihtiyaçlar azalacaktır belki de hiç olmayacaktır. Yorumların doğru kullanımı, kodla ifade edememeyi telafi etmektir.
+* Kod değişir ve gelişir ancak bu süreçte yorumlar her zaman kodu takip edemez ve çoğu zaman tanımladıkları koddan uzaklaşırlar.
+* Yanlış yorumlar, hiçbir yorum yapılmamasından daha kötüdür.
+* Bazı kurumsal kodlama standartları, yasal nedenlerle belirli yorumları yazmaya zorlar. Örneğin; telif hakkı ve yazarlık beyanları, her kaynak dosyanın başında bir yoruma eklemek gerekli ve makul şeylerdir.
+* Bazen bir bilgi ile temel bilgileri sağlamak yararlıdır ancak mümkün olduğunda işlevin adını kullanmak daha iyidir.
+* Diğer programcıları belirli sonuçlar konusunda uyuarmak için yorum eklemek yararlı olabilir. Örneğin, bir test senaryosunun neden kapatıldığını açıklamak gibi.
+* To Do yorumları mantıklı olabilir. İşlevin gelecekte ne olması gerektiği açıklanabilir.
+* Bir yorum yazmaya karar verdiğimiz zaman, bunun yazılabilecek en iyi yorum olup olmadığını düşünmek için zaman harcamalıyız.
+* Bariz belli olan kodu tekrardan yorum ile açıklamamalıyız. 
+* Bir yorum yazmak gerekiyorsa yanında görünen kodu açıkladığından emin olmalıyız. Yerel bir yorum bağlamında sistem çapında bilgi sunulmamaldır.
+* Bir yorumun amacı, kendisini açıklamayan kodu açıklamaktır. Yazılan yorum tekrardan kendisini açıklamak zorunda bırakmamalı.
+ 
