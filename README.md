@@ -10,7 +10,7 @@
     - [Bölüm 7](#Bölüm-7)
     - [Bölüm 8](#Bölüm-8)
     - [Bölüm 9](#Bölüm-9)
-- [Clean Code](#Clean-Code
+- [Clean Code](#Clean-Code)
 - [Bölümler](#Bölümler)
     - [Bölüm 1](#Bölüm-1)
     - [Bölüm 2](#Bölüm-2)
