@@ -75,18 +75,18 @@
 * Pubsub asenkron olayların işlenmesi için iyi bir teknolojidir. Uygulama çalışırken mevcut kodu değiştirmeden kodun eklenmesine ve değiştirilmesine imkan verir. Dezavantajı ise çok fazla pubsub kullanılırsa sistemde neler olup bittiği gözlemlenemeyeceğidir.
 * Programları girdileri çıktılara dönüştüren bir şey olarak görmeye odaklanmalıyız.
 * Kalıtım bir bağlaçtır, yalnızca alt sınıf ebeveyne, ebeveyninin ebeveynine ve benzerliklerine bağlı olmakla kalmaz aynı zamanda çocuğu kullanan kod da tüm atalara bağlanır. Çoklu kalıtımı doğru bir şekilde modellemek gerekiyor, bir araba bir tür araç olabilir aynı zamanda bir tür sigortalı öğe de olabilir. Inheritance kullanmak yerine aşağıdaki üç özelliği kullanabiliriz.
-    -Interfaces and protocols
-    -Delegation 
-    -Mixins and traits
+    • Interfaces and protocols
+    • Delegation 
+    • Mixins and traits
 * Class yapısını kullanmak yerine protocolü tercih etme sebemimiz ise koddaki bağımlılığı azaltmayı amaçladığımız içindir.
 * Kod, uygulama yayınlandıktan sonra değişebilecek değerlere dayandığında, bu değerleri uygulamanın dışında tutmalıyız. Uygulama farklı ortamlarda ve farklı müşterilerde çalıştığında, ortama ve müşteriye özel değerleri uygulamanın dışında tutmak gerekiyor. Bu şekilde yazdığımız uygulamayı paramedik bir yapıda yazmış oluyoruz ve bu şekilde kod çalıştığı yere uyum sağlayacaktır. Paramedik olarak ekleyeceğimiz şeyler genel olarak aşağıdaki gibidir:
-    -Harici hizmetler için kimlik bilgileri
-    -Kayıt seviyeleri ve hedefler
-    -Uygulamanın kullandığı bağlantı noktası, IP adresi, makine ve küme adları
-    -Ortama özel doğrulama parametreleri
-    -Vergi oranları gibi harici olarak ayarlanan parametreler
-    -Siteye özel biçimlendirme ayrıntıları
-    -Lisans anahtarları
+    • Harici hizmetler için kimlik bilgileri
+    • Kayıt seviyeleri ve hedefler
+    • Uygulamanın kullandığı bağlantı noktası, IP adresi, makine ve küme adları
+    • Ortama özel doğrulama parametreleri
+    • Vergi oranları gibi harici olarak ayarlanan parametreler
+    • Siteye özel biçimlendirme ayrıntıları
+    • Lisans anahtarları
     Temel olarak ana kod dışındaki değiştirebileceğimiz şeyleri paramedik olarak tanımlamamız gerekiyor.
 
  ## PM Bölüm 6
@@ -104,35 +104,35 @@
 * Tesadüfen programlamadan kaçınmalıyız, şans ve tesadüfü başarılara güvenmemeliyiz. Bir kod yazıyoruz diyelim, bilerek ve güvenerek ilerlemiyoruz, bir şey yazıyoruz ve doğru çalıştığını görüyoruz ancak aylar sonra bu uygulama çökebilir çünkü burada tesadüf kod yazmış oluyoruz, bu şekilde ilerlememeliyiz. 
 * Uygulama kazaları, kodun şu anda bu şekilde yazıldığıyla için olan şeylerdir. 
 * Çalışan gibi görünen aslında sorun olan şeyleri düzeltmek için risk almalıyız, sebepleri ise aşağıdaki gibidir:
- - Gerçekten çalışmıyor olabilir, çalışıyor gibi görünüyor olabilir.
- - Güvenilen sınır koşulu sadece bir kaza olabilir. Farklı durumlarda farklı davranabilir.
- - Belgelenmemiş davranış, kitaplığın sonraki sürümü ile değişebilir.
- - Ek ve gereksiz belgelenmeler kodu yavaşlatır.
- - Ek çağrılar, yeni hataların ortaya çıkma riskini arttırır.
+    • Gerçekten çalışmıyor olabilir, çalışıyor gibi görünüyor olabilir.
+    • Güvenilen sınır koşulu sadece bir kaza olabilir. Farklı durumlarda farklı davranabilir.
+    • Belgelenmemiş davranış, kitaplığın sonraki sürümü ile değişebilir.
+    • Ek ve gereksiz belgelenmeler kodu yavaşlatır.
+    • Ek çağrılar, yeni hataların ortaya çıkma riskini arttırır.
 * Kasıtlı olarak programlama yapmalıyız. Aşağıdaki maddeleri bu konuda yardımcımız olacaktır:
- - Her zaman ne yaptığınızın farkında olun.
- - Kodu, daha genç bir programcıya açıklayabiliyor olmalıyız.
- - Karanlıkta kodlama yapmamalıyız, neyin ne işe yaradığını bilerek kodlama yapmalıyız.
- - Bu plan kafamızda veya bir kağıtta olsun, planlayarak ilerlemeliyiz.
- - Yalnızca güvenilir şeylere güvenmeliyiz. Bir şeyin güvenirliğinden emin değilsek olabilecek en kötü durumu düşünmeliyiz.
- - Varsayımlarımızı belgelemeliyiz, bu şekilde hem zihnimizde netleşecektir, hem de başkalarına iletmemizde yardımcı olacaktır. 
- - Sadece kodu test etmemeliyiz, aynı zamanda varsayımlarımızı da test etmeliyiz. 
- - Çabamıza öncelik vermeliyiz, önemli yönlere zaman ayırmalıyız.
- - Mevcut kodun gelecekteki kodu engellemesine izin vermemeliyiz. 
+    • Her zaman ne yaptığınızın farkında olun.
+    • Kodu, daha genç bir programcıya açıklayabiliyor olmalıyız.
+    • Karanlıkta kodlama yapmamalıyız, neyin ne işe yaradığını bilerek kodlama yapmalıyız.
+    • Bu plan kafamızda veya bir kağıtta olsun, planlayarak ilerlemeliyiz.
+    • Yalnızca güvenilir şeylere güvenmeliyiz. Bir şeyin güvenirliğinden emin değilsek olabilecek en kötü durumu düşünmeliyiz.
+    • Varsayımlarımızı belgelemeliyiz, bu şekilde hem zihnimizde netleşecektir, hem de başkalarına iletmemizde yardımcı olacaktır. 
+    • Sadece kodu test etmemeliyiz, aynı zamanda varsayımlarımızı da test etmeliyiz. 
+    • Çabamıza öncelik vermeliyiz, önemli yönlere zaman ayırmalıyız.
+    • Mevcut kodun gelecekteki kodu engellemesine izin vermemeliyiz. 
 * Bir program geliştikçe, daha önceki kararları yeniden düşünmek ve kodun bölümlerini yeniden çalışmak gerekecektir, bu süreç tamamen doğaldır. 
 * Bir şeyi öğrendiğimizde eskisine göre daha iyi yorum yapabiliriz. Kod artık tam olarak uymadığında veya herhangi bir şey bize yanlış geldiğinde vb. durumlarda değiştirmekte tereddüz etmemeliyiz. Aşağıdaki durumlarda değiştirme ihtiyacı duyabiliriz.
- - DRY ilkesinin ihlal edildiğini gördüğünüzde,
- - Ortogonal olmayan tasarımı daha ortogonal yapılabilecek bir şey gördüğmüzde,
- - Bir şeyler değişir ve sorun hakkındaki bilgimiz arttığında,
- - Sistem gerçek insanlar tarafından kullanıma başlandıkça, bazı özelliklerin artık düşünülenden daha önemli olduğunu ve olması gereken özelliklerin aslında olmadığında,
- - Performansı arttırmamız gerektiğinde.
+     • DRY ilkesinin ihlal edildiğini gördüğünüzde,
+     • Ortogonal olmayan tasarımı daha ortogonal yapılabilecek bir şey gördüğmüzde,
+     • Bir şeyler değişir ve sorun hakkındaki bilgimiz arttığında,
+     • Sistem gerçek insanlar tarafından kullanıma başlandıkça, bazı özelliklerin artık düşünülenden daha önemli olduğunu ve olması gereken özelliklerin aslında olmadığında,
+     • Performansı arttırmamız gerektiğinde.
 * Yazdığımız kodun iyi olup olmadığını ancak bunu test ederek anlarız. Test etmek istediğimiz şeyi anladıysak test etmeliyiz, aksi taktirde testi doğru yapıp yapamadığımızı bilemeyiz. 
 * Kod tarafında güvenliği sağlamak için birkaç temel ilke vardır:
- - Bir sistemin saldırı yüzey alanı, bir saldırganın veri girebileceği, veri çıkarabileceği ve bir hizmetin yürütülmesini başlatılabileceği tüm erişim noktalarının toplamıdır. Saldırının yüzey alanını küçültmeliyiz.
- - Elimizden geldiğince en az ayrıcalıktann en kısa süre yararlanmaktır. Örneğin en yüksek izin yetkisi olan 'Yöneticiyi' otomatik olarak almamalız. Bu yüksek seviyeye ihtiyaç duyulursa hızlı bir şekilde işlemimizi yapıp gerş bırakmalıyız. 
- - Uygulamadaki kullanıcıların ayarları en güvenli ayarlar olmaldırı.
- - Kişisel olarak tanımlanabilen bilgileri, finansal bilgileri, paraloları vb. bilgileri veritabanında veya baika bir yerde düz metin olarak tutulmamalı.
- - Bilgisayar sistemlerini güncellemek gerekiyor. 
+     • Bir sistemin saldırı yüzey alanı, bir saldırganın veri girebileceği, veri çıkarabileceği ve bir hizmetin yürütülmesini başlatılabileceği tüm erişim noktalarının toplamıdır. Saldırının yüzey alanını küçültmeliyiz.
+     • Elimizden geldiğince en az ayrıcalıktann en kısa süre yararlanmaktır. Örneğin en yüksek izin yetkisi olan 'Yöneticiyi' otomatik olarak almamalız. Bu yüksek seviyeye ihtiyaç duyulursa hızlı bir şekilde işlemimizi yapıp gerş bırakmalıyız. 
+     • Uygulamadaki kullanıcıların ayarları en güvenli ayarlar olmaldırı.
+     • Kişisel olarak tanımlanabilen bilgileri, finansal bilgileri, paraloları vb. bilgileri veritabanında veya baika bir yerde düz metin olarak tutulmamalı.
+     • Bilgisayar sistemlerini güncellemek gerekiyor. 
 * Kod tarafında bir şeyleri adlandırırken sürekli olarak ne demek istediğimizi açıklama yollarını ararsak kodumuzu daha iyi anlamamıza yardımcı olacaktır.
 
 
@@ -209,3 +209,38 @@
 * Bir yorum yazmak gerekiyorsa yanında görünen kodu açıkladığından emin olmalıyız. Yerel bir yorum bağlamında sistem çapında bilgi sunulmamaldır.
 * Bir yorumun amacı, kendisini açıklamayan kodu açıklamaktır. Yazılan yorum tekrardan kendisini açıklamak zorunda bırakmamalı.
  
+## CC Bölüm 5
+
+* Yazdığımız kodun güzel bir şekilde biçimlendirilmesine dikkat etmeliyiz. Kodu okuyan birisi karıştırılmış bir kod yığını görürse projenin geri kalanının da aynı şekilde olacağı hissine kapılması muhtemeldir. Bir ekip üzerinde çalışıyorsak, ekip tek bir biçimlendirme kuralı üzerinde anlaşmalı ve tüm üyeler buna uymalıdır.
+* Bir kaynak dosyasının ismi basit ama açıklayıcı olmalıdır, isim tek başına doğru modülde olup olmadığımızı bize anlatmaya yeterli olmalıdır, kaynak dosyanın en üst kısımları üst düzey bilgi saplamalıdır, aşağıya doğru ilerledikçe detay artmalıdır ve sonunda da dosyada en düşük seviyedeki fonksiyonları ve detaylar bulunmalıdır.
+* Dikey açıklıkta her kod bloğu birbirlerinin ardından boş satır ile ayrılmalıdır, böyle kodun okunabilirliği artacaktır.
+* Yakın ilişkili kavramlar dikey olarak birbirine yakın olarak tutulmalıdır. Çok iyi bir neden olmadıkça farklı dosyalara ayrılmamalıdırlar.
+* Bir işlev diğerini çağırırsa, bunlar dikey olarak yakın olmalıdır ve mümkünse arayan arananın üzerinde olmalıdır.
+* Yatay hizalama, kodu okerken gerçek niyetten uzaklaştırabilir, bu sebeple kullanmamalıyız.
+* Her programcı kendi biçimlendirme kurallarını koyabilir ancak bir ekip içinde çalışıyorsa ekibin biçimlendirme kurallarına uyması gerekmektedir. Yazılımın tutarlı bir stilinin olması gerekmektedir. 
+
+
+## CC Bölüm 6
+
+* Oluşturduğumuz değişkenlere başka kimsenin bağımlı olması istemediğimiz zaman gizli olarak tutmalıyız. Verilerimizi soyur terimler ile tutmalıyız.
+* Veri yapılarını kullanan kod, mevcut veri yapılarını değiştirmeden yeni işlevler eklemeyi kolaylaştırır. OO kodu ise mecut işlevleri değiştirmeden yeni sınıflar eklemeyi kolaylaştırır. Prosedürel kod, tüm fonksiyonların değişmesi gerektiğinden yeni veri yapılarının eklenmesini zorlaştırır. OO kodu ise tüm sınıfınların değişmesi gerektiğinden yeni işlevler eklemeyi zorlaştırır, yani OO için zor olan şeyler prosedürler için kolaydır ve prosedürler için zor olan şeyler OO için kolaydır.
+* Bir fonksiyonun dönüş değeri üzerinden farklı bir fonksiyon çağırılmamalıdır ve bundan kaçınılmalıdır.
+* Herhangi bir sistemde bazen yeni veri türleri eklemeyi esnekliğini isteriz, burada nesneleri tercih etmeliyiz. Diğer zamanlarda yeni davranışlar ekleme esnekliği isteyeceğiz ve bu nedenle sistemin bu bölümünde veri türlerini ve prosedürleri tercih etmeliyiz.
+
+
+## CC Bölüm 7
+
+* Kod yazarken hataya düşeceği yerde hata kodu göndermek de bir yaklaşımdır ancak geri dönüp hata kodlarına bakmak unutulabilir, bunun yerine exception kullanmak daha iyidir.
+* İstisnaları ayrı olarak kontrol etmeye gerek yoktur.
+* Atılan her öxel durum, bir hatanın kaynağını ve konumunu belirlemek için yeterli bağlamı sağlamalıdır. Bilgilendirici hata mesajları oluşturmalıyız ve bunları exception ile birlikte iletmeliyiz. Başarısız olan işlemden ve hatanın türünden bahsetmeliyiz. Loglayabilmek için yeterli bilginin olmasına özen göstermeliyiz.
+* Hataları kaynaklarına veya türlerine göre sınıflandırabiliriz. 
+* Third party bir API'yi kullandığımızda ona olan bağımlılığı en aza indirgemeliyiz.
+
+## CC Bölüm 8
+
+* Third party paketleri ve açık kaynakları temiz bir şekilde kodumuza entegre etmeliyiz.
+* Third party bir kod, daha kısa sürede teslin daha fazla işlevsellik elde etmemize yardımcı olur. Kullandığımız third party kodlar için testler yazmalıyız. 
+* Third party bir kodu öğrenmek için öğrenme testleri yapılabilir, bu testleri yazmak bilgiyi elde etmenin kolay bir yoludur. Öğrenme testleri third party paketlerin beklediğimiz gibi çalışıp çalışmadığını doğrular.
+* Third party kodun ihtiyaçlarımızla uyumlu olup olmayacağının kesinliği yoktur. Orijinal yazarlar kendi ihtiyaçlarına göre ekleme çıkarma yapabilirler ve her bir güncelleme bu paketi kullanan için bir risk taşır.
+* Third party kod kullanımında çok fazla ayrıntı vermemeliyiz.
+
