@@ -16,6 +16,19 @@
     - [CC Bölüm 2](#CC-Bölüm-2)
     - [CC Bölüm 3](#CC-Bölüm-3)
     - [CC Bölüm 4](#CC-Bölüm-4)
+    - [CC Bölüm 5](#CC-Bölüm-5)
+    - [CC Bölüm 6](#CC-Bölüm-6)
+    - [CC Bölüm 7](#CC-Bölüm-7)
+    - [CC Bölüm 8](#CC-Bölüm-8)
+    - [CC Bölüm 9](#CC-Bölüm-9)
+    - [CC Bölüm 10](#CC-Bölüm-10)
+    - [CC Bölüm 11](#CC-Bölüm-11)
+    - [CC Bölüm 12](#CC-Bölüm-12)
+    - [CC Bölüm 13](#CC-Bölüm-13)
+    - [CC Bölüm 14](#CC-Bölüm-14)
+    - [CC Bölüm 15](#CC-Bölüm-15)
+    - [CC Bölüm 16](#CC-Bölüm-16)
+    
 
 
 # Pragmatic Programmer
@@ -244,3 +257,44 @@
 * Third party kodun ihtiyaçlarımızla uyumlu olup olmayacağının kesinliği yoktur. Orijinal yazarlar kendi ihtiyaçlarına göre ekleme çıkarma yapabilirler ve her bir güncelleme bu paketi kullanan için bir risk taşır.
 * Third party kod kullanımında çok fazla ayrıntı vermemeliyiz.
 
+## CC Bölüm 9
+* Başarısız test yazmadan asıl kod yazılamaz.
+* Asıl kodlarda olduğu gibi test kodlarında da kodun temiz olmasına ve okunabilirliğine dikkat etmeliyiz.
+* Her test bir işleve yönelik olmalıdır.
+* Hızlı Test hızlı olmalıdır.
+* Bağımsız Test diğer işlevlere bağlı olmamalıdır.
+* Tekrarlanabilir Test her ortamda tekrarlanabilir olmalıdır.
+* Kendi Kendini Doğrulayan Test, başarılı veya başarısız olduğunu gösteren bir boole çıktısı döndürmelidir.
+
+## CC Bölüm 10
+* Fonksiyonlarda öğrenilenler burada da geçerlidir, sınıflar küçük olmalıdır.
+* Sınıfların tek sorumluluğu olmalıdır. Bu nedenle, sınıfların birkaç örnek değişkeni olmalıdır. Ve bir sınıfın yöntemlerinin her biri, bu değişkenlerden birini veya daha fazlasını manipüle etmelidir.
+* Bir işlev ne kadar çok değişkeni işlerse, sınıfa o kadar uygun olur.
+
+## CC Bölüm 11
+* Sistemler geliştirilirken, nesneler oluşturulduğunda ve bağımlılıklar sağlandığında, başlatma zamanını başlatma sonrasında devralan çalışma zamanı mantığından ayırmalıdır.
+* Yapıyı kullanımdan ayırmak için kullanılan güçlü bir mekanizma; Kontrolün Ters Çevirilmesinin (IoC) bağımlılık yönetimine uygulanması olan Dependency Injection (DI).
+
+## CC Bölüm 12
+* Kent Beck'e göre, bu kurallara uyan bir tasarım "basittir". Testleri çalıştır, çatışmaları önleyin, kodu yazan kişinin amacını belirtir, yöntem ve sınıf sayısını en aza indirir.
+
+## CC Bölüm 13
+* Uyum bir ayrıştırma stratejisidir. Tek iş parçacıklı uygulamalarda, ne zaman yapılacağı o kadar iyi belirlenir ki, tüm uygulamanın durumu genellikle stackbacktrace'e bakılarak belirlenebilir.Bu durumda, kesme noktalarını ayarlayarak sistemin durumu hakkında bilgi alabiliriz. Böylece uygulama, tek bir büyük programdan çok birbiriyle işbirliği yapan birçok küçük bilgisayara benziyor. Bu, sistemi anlamamızı kolaylaştırır.
+* Eşzamanlılık, iş birden çok iş parçacığı veya birden çok işlemci arasında paylaşılmak üzere yapıldığında performansı artırır. Elbette bunun getirdiği ek kod yükleri olacaktır.
+* Tasarım yaparken neyin ne zaman ayrıştırılacağını belirlemeliyiz.
+* Çok basit bir eşzamanlılık tasarlasak bile karmaşıktır.
+* Eşzamanlılık sağlamak istiyorsak mevcut tasarımımızı tamamen değiştirmek gerekiyor.
+
+## CC Bölüm 14
+* Sadece kodu çalıştırmak yeterli değildir. Önlem alınmadığı taktirde çalışan kod bozulabilir. 
+* Proje geliştirirken, projeyi kötü koddan daha fazla etkileyebilecek hiçbir şey yoktur. Kötü programlar yeniden oluşturulabileceğinden, kötü gereksinimler yeniden tanımlanabilir, ancak kötü kod zamanla çürür ve çalışmaz hale gelir.
+* Kötü kod temizlenebilir, ancak zaman geçtikçe maliyet artar. Kod bozuldukça modüller iç içe geçer ve karmaşık bir ortam oluşturur. Yani buradaki çözüm, kodu sürekli olarak temiz ve düzenli tutmaktır.
+
+## CC Bölüm 15
+* Hiçbir modül iyileştirmeden muaf değildir, her modül daha iyi hale getirilebilir.
+* Programcılar olarak sorumluluğumuz, kodu bulduğumuzdan daha iyi hale getirmektir.
+
+## CC Bölüm 16
+* Kod bize tespit edildiği zaman, kodu daha iyi hale getirmeliyiz. Bu işlem zaman alabilir ancak bize ileride fayda sağlayacaktır.
+* Test kapsamını arttırabilir, hataları ele alabilir, kodu alt bölümlere ayırabilir ve kod tekrarını önleyebiliriz.
+* Kodu daha sonradan görüntüleyen birisi kodu çok daha kolay anlayacaktır.
